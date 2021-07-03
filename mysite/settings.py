@@ -105,7 +105,7 @@ LOGGING = {
             'level': 'DEBUG',
             'class': 'logging.FileHandler',
             'formatter': 'file',
-            'filename': BASE_DIR + "/logfile",
+            'filename': BASE_DIR + "/logfile.log",
         }
     },
     'root': {

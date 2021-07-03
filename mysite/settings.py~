@@ -81,6 +81,52 @@ DATABASES = {
 }
 
 
+
+
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'formatters': {
+        'console': {
+            'format': '[{pathname}:{funcName}:{lineno:d}:{levelname}] {message}',
+            'style': '{',
+        },
+        'file': {
+            'format': '[{pathname}:{funcName}:{lineno:d}:{levelname}] {message}',
+            'style': '{',
+        }
+    },
+    'handlers': {
+        'console': {
+            'class': 'logging.StreamHandler',
+            'formatter': 'console'
+        },
+        'file': {
+            'level': 'DEBUG',
+            'class': 'logging.FileHandler',
+            'formatter': 'file',
+            'filename': BASE_DIR + "/logfile",
+        }
+    },
+    'root': {
+        'level': 'DEBUG',
+        'handlers': ['console', 'file']
+    },
+    'loggers': {
+        # logs only in development server
+        'django.server': {
+            'level': 'DEBUG',
+            'handlers': ['console', 'file']
+        }
+    }
+}
+
+
+
+
+
+
+
 # Password validation
 # https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators
 

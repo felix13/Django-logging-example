@@ -1,0 +1,10 @@
+[/home/felix/.local/lib/python3.5/site-packages/django/utils/autoreload.py:run_with_reloader:597:INFO] Watching for file changes with StatReloader
+[/home/felix/Downloads/scalyr/pull_test/Django-logging-example/myapp/views.py:home:10:ERROR] Something went wrong !!
+[/home/felix/.local/lib/python3.5/site-packages/django/core/servers/basehttp.py:log_message:154:INFO] "GET / HTTP/1.1" 200 29
+[/home/felix/.local/lib/python3.5/site-packages/django/utils/log.py:log_response:228:WARNING] Not Found: /favicon.ico
+[/home/felix/.local/lib/python3.5/site-packages/django/core/servers/basehttp.py:log_message:154:WARNING] "GET /favicon.ico HTTP/1.1" 404 2227
+[/home/felix/.local/lib/python3.5/site-packages/django/utils/log.py:log_response:228:WARNING] Not Found: /test_server_error
+[/home/felix/.local/lib/python3.5/site-packages/django/core/servers/basehttp.py:log_message:154:WARNING] "GET /test_server_error HTTP/1.1" 404 2245
+[/home/felix/.local/lib/python3.5/site-packages/django/core/servers/basehttp.py:log_message:154:INFO] "GET /log_server_error HTTP/1.1" 301 0
+[/home/felix/.local/lib/python3.5/site-packages/django/utils/log.py:log_response:228:ERROR] Internal Server Error: /log_server_error/
+[/home/felix/.local/lib/python3.5/site-packages/django/core/servers/basehttp.py:log_message:154:ERROR] "GET /log_server_error/ HTTP/1.1" 500 26
